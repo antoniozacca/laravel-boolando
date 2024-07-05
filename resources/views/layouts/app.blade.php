@@ -8,5 +8,7 @@
 </head>
 <body>
     @include('shared.header')
+    @yield('content')
+    @include('shared.footer')
 </body>
 </html>

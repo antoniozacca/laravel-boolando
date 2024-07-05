@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $prodotti = config('prodotti');
-    $data = [
-        'prodotti' => $prodotti
-    ];
-    return view('welcome', $data);
+    // $data = [
+    //     'prodotti' => $prodotti
+    // ];
+    return view('shared.prodotti', compact('prodotti'));
 });
